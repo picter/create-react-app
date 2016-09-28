@@ -92,8 +92,7 @@ module.exports = {
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
       src: paths.appSrc,
-      test: path.resolve(paths.appSrc, '..', 'test'),
-      lib: path.resolve(paths.appSrc, '..', 'lib'),
+      lib: path.resolve(paths.appSrc, '..', 'lib'), // TODO: remove if lib is ported app-artists#192
     }
   },
   // @remove-on-eject-begin
@@ -148,7 +147,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         include: [
           paths.appSrc,
-          path.resolve(paths.appSrc, '..', 'lib'),
+          path.resolve(paths.appSrc, '..', 'lib'), // TODO: remove if lib is ported app-artists#192
         ],
         loader: 'babel',
         query: {
@@ -195,7 +194,7 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
-      { test: /\.styl$/, loader: 'style!css!stylus?paths=src/', exclude: /node_modules/ },
+      { test: /\.styl$/, loader: 'style!css!postcss!stylus?paths=src/', exclude: /node_modules/ },
     ]
   },
   // @remove-on-eject-begin
