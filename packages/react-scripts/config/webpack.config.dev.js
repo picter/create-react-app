@@ -89,7 +89,10 @@ module.exports = {
     alias: {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-      'react-native': 'react-native-web'
+      'react-native': 'react-native-web',
+      src: paths.appSrc,
+      test: path.resolve(paths.appSrc, '..', 'test'),
+      lib: path.resolve(paths.appSrc, '..', 'lib'),
     }
   },
   // @remove-on-eject-begin
@@ -108,13 +111,16 @@ module.exports = {
         test: /\.(js|jsx)$/,
         loader: 'eslint',
         include: paths.appSrc,
-      }
+      },
     ],
     loaders: [
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
-        include: paths.appSrc,
+        include: [
+          paths.appSrc,
+          path.resolve(paths.appSrc, '..', 'lib'),
+        ],
         loader: 'babel',
         query: {
           // @remove-on-eject-begin
