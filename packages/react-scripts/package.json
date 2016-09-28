@@ -62,6 +62,8 @@
     "rimraf": "2.5.4",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
+    "stylus": "0.54.5",
+    "stylus-loader": "2.3.1",
     "url-loader": "0.5.7",
     "webpack": "1.13.2",
     "webpack-dev-server": "1.16.1",
@@ -70,9 +72,7 @@
   "devDependencies": {
     "bundle-deps": "1.0.0",
     "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^2.3.1"
+    "react-dom": "^15.3.0"
   },
   "optionalDependencies": {
     "fsevents": "1.0.14"
