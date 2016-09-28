@@ -1,6 +1,6 @@
 {
   "name": "picter-react-scripts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Configuration and scripts for Create React App.",
   "repository": "picter/create-react-app",
   "license": "BSD-3-Clause",
@@ -117,6 +117,8 @@
     "rimraf",
     "strip-ansi",
     "style-loader",
+    "stylus",
+    "stylus-loader",
     "url-loader",
     "webpack",
     "webpack-dev-server",
