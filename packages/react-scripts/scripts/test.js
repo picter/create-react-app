@@ -11,6 +11,7 @@
 
 process.env.NODE_ENV = 'test';
 process.env.PUBLIC_URL = '';
+// Set NODE_PATH to root-direcotry tp allow absolut import paths in tests
 process.env.NODE_PATH = '.';
 
 // Load environment variables from .env file. Suppress warnings using silent
