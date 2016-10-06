@@ -69,18 +69,3 @@ module.exports = {
   nodePaths: nodePaths
 };
 // @remove-on-eject-end
-
-// @remove-on-publish-begin
-module.exports = {
-  appBuild: resolveOwn('../../../build'),
-  appPublic: resolveOwn('../template/public'),
-  appHtml: resolveOwn('../template/public/index.html'),
-  appIndexJs: resolveOwn('../template/src/index.js'),
-  appPackageJson: resolveOwn('../package.json'),
-  appSrc: resolveOwn('../template/src'),
-  testsSetup: resolveOwn('../template/src/setupTests.js'),
-  appNodeModules: resolveOwn('../node_modules'),
-  ownNodeModules: resolveOwn('../node_modules'),
-  nodePaths: nodePaths
-};
-// @remove-on-publish-end
