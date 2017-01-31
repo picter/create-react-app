@@ -106,6 +106,9 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
+
+      src: paths.appSrc,
+      lib: path.resolve(paths.appSrc, '..', 'lib'), // TODO: remove if lib is ported app-artists#192
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
@@ -184,7 +187,10 @@ module.exports = {
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
-        include: paths.appSrc,
+        include: [
+          paths.appSrc,
+          path.resolve(paths.appSrc, '..', 'lib'), // TODO: remove if lib is ported app-artists#192
+        ],
         loader: require.resolve('babel-loader'),
         // @remove-on-eject-begin
         options: {
