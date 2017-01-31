@@ -14,6 +14,8 @@
 process.env.BABEL_ENV = 'test';
 process.env.NODE_ENV = 'test';
 process.env.PUBLIC_URL = '';
+// Set NODE_PATH to root-direcotry tp allow absolute import paths in tests
+process.env.NODE_PATH = '.';
 
 // Makes the script crash on unhandled rejections instead of silently
 // ignoring them. In the future, promise rejections that are not handled will
