@@ -11,6 +11,8 @@
 
 process.env.NODE_ENV = 'test';
 process.env.PUBLIC_URL = '';
+// Set NODE_PATH to root-direcotry tp allow absolute import paths in tests
+process.env.NODE_PATH = '.';
 
 // Load environment variables from .env file. Suppress warnings using silent
 // if this file is missing. dotenv will never modify any environment variables
