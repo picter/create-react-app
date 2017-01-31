@@ -134,6 +134,7 @@ module.exports = {
           /\.(js|jsx)$/,
           /\.css$/,
           /\.styl$/,
+          /\.sass$/,
           /\.json$/,
           /\.svg$/
         ],
@@ -186,6 +187,7 @@ module.exports = {
         }
       },
       { test: /\.styl$/, loader: 'style!css!postcss!stylus?paths=src/', exclude: /node_modules/ },
+      { test: /\.sass/, loader: 'style!css!postcss!sass', exclude: /node_modules/ },
     ]
   },
   // @remove-on-eject-begin
