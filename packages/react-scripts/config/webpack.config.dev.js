@@ -164,6 +164,7 @@ module.exports = {
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
+          /\.styl$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
