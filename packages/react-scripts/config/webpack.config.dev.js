@@ -183,7 +183,8 @@ module.exports = {
         query: {
           name: 'static/media/[name].[hash:8].[ext]'
         }
-      }
+      },
+      { test: /\.styl$/, loader: 'style!css!postcss!stylus?paths=src/', exclude: /node_modules/ },
     ]
   },
   // @remove-on-eject-begin
