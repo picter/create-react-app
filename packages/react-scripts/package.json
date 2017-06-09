@@ -40,6 +40,10 @@
     "eslint": "3.16.1",
     "eslint-config-react-app": "^0.6.1",
     "eslint-loader": "1.6.0",
+    "eslint-plugin-flowtype": "2.21.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.10.0",
     "fs-extra": "0.30.0",
@@ -61,18 +65,8 @@
     "whatwg-fetch": "2.0.2"
   },
   "devDependencies": {
-    "eslint-plugin-flowtype": "2.21.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.9.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
-  },
-  "peerDependencies": {
-    "eslint-plugin-flowtype": "2.21.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.9.0"
   },
   "optionalDependencies": {
     "fsevents": "1.0.17"
