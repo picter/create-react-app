@@ -142,6 +142,13 @@ module.exports = {
               // @remove-on-eject-begin
               baseConfig: {
                 extends: [require.resolve('eslint-config-picter')],
+                settings: {
+                  'import/resolver': {
+                    webpack: {
+                      config: path.resolve(__dirname, 'webpack.config.dev.js'),
+                    },
+                  },
+                },
               },
               ignore: false,
               useEslintrc: false,
