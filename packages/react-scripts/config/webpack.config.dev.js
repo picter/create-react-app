@@ -141,7 +141,7 @@ module.exports = {
               formatter: eslintFormatter,
               // @remove-on-eject-begin
               baseConfig: {
-                extends: [require.resolve('eslint-config-react-app')],
+                extends: [require.resolve('eslint-config-picter')],
               },
               ignore: false,
               useEslintrc: true,
