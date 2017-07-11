@@ -149,6 +149,7 @@ module.exports = {
                     },
                   },
                 },
+                parser: 'babel-eslint',
               },
               ignore: false,
               useEslintrc: false,
