@@ -175,7 +175,6 @@ module.exports = {
           /\.(js|jsx)$/,
           /\.css$/,
           /\.styl$/,
-          /\.sass$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
@@ -295,44 +294,6 @@ module.exports = {
             loader: require.resolve('stylus-loader'),
             options: {
               paths: 'src/',
-              sourceMap: false,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.sass$/,
-        use: [
-          require.resolve('style-loader'),
-          {
-            loader: require.resolve('css-loader'),
-            options: {
-              importLoaders: 1,
-            },
-          },
-          {
-            loader: require.resolve('postcss-loader'),
-            options: {
-              // Necessary for external CSS imports to work
-              // https://github.com/facebookincubator/create-react-app/issues/2677
-              ident: 'postcss',
-              plugins: () => [
-                require('postcss-flexbugs-fixes'),
-                autoprefixer({
-                  browsers: [
-                    '>1%',
-                    'last 4 versions',
-                    'Firefox ESR',
-                    'not ie < 9', // React doesn't support IE8 anyway
-                  ],
-                  flexbox: 'no-2009',
-                }),
-              ],
-            },
-          },
-          {
-            loader: require.resolve('sass-loader'),
-            options: {
               sourceMap: false,
             },
           },
