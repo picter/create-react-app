@@ -144,7 +144,7 @@ module.exports = {
                 extends: [require.resolve('eslint-config-picter')],
               },
               ignore: false,
-              useEslintrc: true,
+              useEslintrc: false,
               // @remove-on-eject-end
             },
             loader: require.resolve('eslint-loader'),
