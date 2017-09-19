@@ -1,6 +1,6 @@
 {
   "name": "picter-react-scripts",
-  "version": "1.0.13-alpha.3",
+  "version": "1.0.13-patch.1",
   "description": "Configuration and scripts for Create React App.",
   "repository": "picter/create-react-app",
   "license": "BSD-3-Clause",
