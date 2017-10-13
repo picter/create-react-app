@@ -250,7 +250,7 @@ module.exports = {
           },
           // Stylus loader
           {
-            test: /\.css$/,
+            test: /\.styl$/,
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {
