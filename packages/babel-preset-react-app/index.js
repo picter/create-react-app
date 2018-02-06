@@ -65,6 +65,8 @@ if (env === 'development' || env === 'test') {
     require.resolve('babel-plugin-transform-react-jsx-source'),
     // Adds __self attribute to JSX which React will use for some warnings
     require.resolve('babel-plugin-transform-react-jsx-self'),
+    // Adds some helpers for styled-components development
+    require.resolve('babel-plugin-styled-components'),
   ]);
 }
 
