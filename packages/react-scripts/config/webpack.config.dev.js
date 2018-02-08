@@ -183,6 +183,7 @@ module.exports = {
                 require.resolve('babel-preset-react-app'),
                 require.resolve('babel-preset-stage-3'),
               ],
+              plugins: [require.resolve('babel-plugin-styled-components')],
               // @remove-on-eject-end
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/
